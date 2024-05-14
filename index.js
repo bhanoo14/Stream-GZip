@@ -16,8 +16,10 @@ app.get('/', (req, res) =>{
     const Xstream = fs.createReadStream("./example.txt", 'utf-8')
     console.log("creating a Stream to Share Data in CHuncks");
 
-    // after here you can handle error to open file u can reference the code from the bottom of the same page..
 
+
+    // after here you can handle error to open file u can reference the code from the bottom of the same page..
+// just minor things to do
 
     Xstream.on("data", (chunk) => {
         console.log("on Chunks");
